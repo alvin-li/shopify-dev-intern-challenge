@@ -4,9 +4,4 @@ class Product < ApplicationRecord
 
   validates :price, numericality: { greater_than_or_equal_to: 0 }
 
-  # @return [Float] - The product price converted from a BigDecimal to a float
-  def value
-    self.price.to_f
-  end
-
 end
