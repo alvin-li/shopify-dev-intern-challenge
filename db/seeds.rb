@@ -13,10 +13,6 @@ products = Product.create!([{
     price: 10.99,
     shop: mall_mart
   }, {
-    name: 'White T-Shirt',
-    price: 14.99,
-    shop: mall_mart
-  }, {
     name: 'Trash Bin',
     price: 2.99,
     shop: wall_mart
@@ -26,17 +22,9 @@ LineItem.create!([{
     order: mall_mart_order,
     quantity: 3
   }, {
-    product: products.second,
-    order: mall_mart_order,
-    quantity: 2
-  }, {
     product: products.last,
     order: wall_mart_order,
     quantity: 10
-  }, {
-    product: products.last,
-    order: wall_mart_order,
-    quantity: 1
   }])
 
 

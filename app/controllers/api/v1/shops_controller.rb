@@ -39,7 +39,7 @@ module Api
       def destroy
         set_shop.destroy
 
-        render json: { status: :ok, message: 'Shop deleted', data: set_shop }
+        render json: { status: :ok, message: 'Shop deleted' }
       end
 
       private

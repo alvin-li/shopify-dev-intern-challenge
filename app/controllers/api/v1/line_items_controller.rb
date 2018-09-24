@@ -5,7 +5,7 @@ module Api
 
       # GET /line_items
       def index
-        line_items = LineItems.order('updated_at DESC')
+        line_items = LineItem.order('updated_at DESC')
 
         render json: { status: :ok, message: 'Loaded all line items', data: line_items }
       end
@@ -39,7 +39,7 @@ module Api
       def destroy
         set_line_item.destroy
 
-        render json: { status: :ok, message: 'Line Item deleted', data: set_line_item }
+        render json: { status: :ok, message: 'Line Item deleted' }
       end
 
       private

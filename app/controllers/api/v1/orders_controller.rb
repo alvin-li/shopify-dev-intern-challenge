@@ -39,7 +39,7 @@ module Api
       def destroy
         set_order.destroy
 
-        render json: { status: :ok, message: 'Order deleted', data: set_order }
+        render json: { status: :ok, message: 'Order deleted'}
       end
 
       private
