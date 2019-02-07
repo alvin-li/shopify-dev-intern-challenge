@@ -32,8 +32,8 @@ These are the params for updating/creating each model:
 There are still a ton of ways to extend the base functionality, such as:
  - adding product variants for line items 
  - writing methods to calculate revenue over time
- - or building out actual views on top of the raw API
+ - building out views to help navigate the API
  
  This server also has zero security. Even just adding a public key which is stored in a .env file would be a good start.
  
- I read up on the documents regarding GKE, Docker, and Kubernetes and attempted to deploy the API to a Kubernetes environment but honestly got pretty bamboozled after just getting GKE running on my computer.
+ I read up on the documents regarding GKE, Docker, and Kubernetes and attempted to deploy my project to a Kubernetes environment but was unsuccessful.
